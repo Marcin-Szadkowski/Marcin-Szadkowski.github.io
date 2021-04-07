@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== SWIPER CSS ===== -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/podrozownik-style.css">
+
+        <title>Podrozownik project</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Podrozownik project</a>
+                <div>
+                    <a href="index.html" class="button button-light">Go back</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="project section bd-container">
+                <span class="section-subtitle">Details of</span>
+                <h2 class="section-title">Podrozownik</h2>
+
+                <div class="hobby__container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="project__photo swiper-slide">
+                            <img src="assets/img/portfolio1.png" alt="" class="project__img">
+                            <span class="photo__description">Main page</span> 
+                        </div>
+                        
+                        <div class="project__photo swiper-slide">
+                            <img src="assets/img/podrozownik3.png" alt="" class="project__img">
+                            <span class="photo__description">Search for routes</span> 
+                        </div>
+
+                        <div class="project__photo swiper-slide">
+                            <img src="assets/img/podrozownik2.png" alt="" class="project__img">
+                            <span class="photo__description">Route details</span> 
+                        </div>
+
+                        <div class="project__photo swiper-slide">
+                            <img src="assets/img/podrozownik4.png" alt="" class="project__img">
+                            <span class="photo__description">Comments</span> 
+                        </div>
+
+                        <div class="project__photo swiper-slide">
+                            <img src="assets/img/podrozownik5.png" alt="" class="project__img">
+                            <span class="photo__description">Plan trip with users</span> 
+                        </div>
+
+                        <div class="project__photo swiper-slide">
+                            <img src="assets/img/podrozownik6.png" alt="" class="project__img">
+                            <span class="photo__description">Join recommended trip</span> 
+                        </div>
+
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p class="project__description">Podrozownik is a web application for motorcyclists. Basically app gathers people who are looking for ideas and company for travels. Without an account one can search for routes, see comments and rates. Furthermore app recommends best travels based on popularity. When logged in user may create his own trip and invite his friends. If created trip is public users can send requests to join the trip.</p>
+                <span class="section-subtitle">
+                    <a href="https://gitlab.com/time_travelers/podrozownik" class="code__link">See our code   <i class='bx bxl-gitlab' ></i></a>                 
+                </span>
+            </section>
+
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Technologies</span>
+
+                <div class="services__container bd-grid">
+                    <div class="services__data">
+                        <img src="assets/img/django.jpg" class="technology__img" alt="">
+                    </div>
+
+                    <div class="services__data">
+                        <img src="assets/img/drf.png" class="technology__img" alt="">
+                    </div>
+
+                    <div class="services__data">
+                        <img src="assets/img/react.png" class="technology__img" alt="">
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+     <!-- ===== SWIPER JS ===== -->
+     <script src="assets/js/swiper-bundle.min.js"></script>
+
+     <!--===== Podrozownik JS =====-->
+     <script src="assets/js/podrozownik.js"></script> 
+
+    </body>
+</html>
