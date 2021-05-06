@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== SWIPER CSS ===== -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/puzzle-style.css">
+
+        <title>Podrozownik project</title>
+    </head>
+    <body onload="loadGallery();">
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Puzzle game</a>
+                <div>
+                    <a href="index.html" class="button button-light">Go back</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="project section bd-container">
+                <span class="section-subtitle">Select picture</span>
+                <h2 class="section-title"></h2>
+
+                <div class="hobby__container swiper-container">
+                    <div id="gallery-div" class="swiper-wrapper">
+           
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p class="project__description"></p>
+            </section>
+
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Select difficulty</span>
+                <div class="">
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input id="number-input" type="number" placeholder="Number" class="contact__input" min="3" max="10">
+                        </div>
+    
+                        <input type="button" value="Start Game" class="button contact__button" onclick="init();">
+                    </form>
+                </div>
+                <canvas id="canvas"></canvas>
+            </section>
+        </main>
+
+     <!-- ===== SWIPER JS ===== -->
+     <script src="assets/js/swiper-bundle.min.js"></script>
+
+     <!--===== Podrozownik JS =====-->
+     <script src="assets/js/puzzle.js"></script> 
+
+    </body>
+</html>
