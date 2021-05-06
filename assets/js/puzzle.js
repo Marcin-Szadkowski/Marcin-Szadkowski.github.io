@@ -43,6 +43,7 @@ function loadGallery(){
         }).catch(err => console.error(err));
         galleryDiv.appendChild(photoDiv);
     }
+    window.dispatchEvent(new Event('resize')) //because of issue with dynamic content of swiper
 }
 
 function imageSelected(imageUrl) {
